@@ -3,6 +3,7 @@ h1 {
   color: red;
 }
 img {
-  display: flex;
+  display: block;
   align-items: center;
+  border-radius: 30px;
 }
