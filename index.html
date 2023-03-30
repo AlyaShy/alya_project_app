@@ -2,22 +2,43 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weather App</title>
   </head>
   <body>
-    <h1>HOLLA</h1>
-    <img
-      src="https://usercontent.one/wp/www.stefaniarastellino.com/wp-content/uploads/interior-design-rastellino-2-1-1500x630.jpg?media=1634584254"
-      alt=""
-    />
-    <form>
-      <input type="email" placeholder="Enter your email" />
-      <input type="password" placeholder="Enter your password" />
-      <input type="submit" placeholder="Login" />
-    </form>
-    <script src="script.js"></script>
+    <div class="card">
+      <div class="search">
+        <input type="text" class="search-bar" placeholder="Type a city..." />
+        <button>Search</button>
+      </div>
+      <div class="weather">
+        <h2 class="city">Weather in Boston</h2>
+        <h1 class="temp">20°C</h1>
+
+        <div class="flex">
+          <img
+            src="https://openweathermap.org/img/wn/04d.png"
+            alt=""
+            class="icon"
+          />
+          <div class="description">Cloudy</div>
+        </div>
+        <div class="humidity">Humidity: 60%</div>
+        <div class="wind">Wind speed: 6.2km/h</div>
+        <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+      </div>
+    </div>
+    <script src="src/index.js" defer></script>
   </body>
 </html>
+lin
